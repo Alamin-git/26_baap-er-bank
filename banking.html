@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-6xl mt-14 text-center capitalize">let's get some <span
+                class="font-semibold text-lime-400">moooooney</span>!!!</h1>
+    </header>
+    <main class="mt-8 w-3/4 mx-auto">
+        <section class="grid grid-cols-3 gap-4  text-white">
+            <div class="p-8 bg-blue-300 rounded">
+                <h2 class="text-2xl">Deposit</h2>
+                <h4 class="text-4xl">$<span id="current-amount">00</span></h4>
+            </div>
+            <div class="p-8 bg-green-300 rounded">
+                <h2 class="text-2xl">Withdrow</h2>
+                <h4 class="text-4xl">$<span id="withdrow-total">00</span></h4>
+            </div>
+            <div class="p-8 bg-yellow-200 rounded">
+                <h2 class="text-2xl">Balance</h2>
+                <h4 class="text-4xl">$<span id="balace-total">1200</span></h4>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4 mt-8 ">
+            <div class="bg-cyan-200 rounded-lg">
+                <h3 class="text-3xl text-center my-4 font-medium">Please Deposite</h3>
+                <div>
+                    <input id="deposit-field" class="border rounded border-gray-400 block m-auto w-2/4 px-4 mb-4"
+                        type="text" placeholder="$ amount">
+                    <button id="deposit-button"
+                        class="text-xl text-white py-2 px-8 bg-teal-700 m-auto block mb-4 rounded">Deposit</button>
+                </div>
+            </div>
+            <div class="bg-rose-200 rounded-lg">
+                <h3 class="text-3xl text-center my-4 font-medium">Please Withdraw</h3>
+                <div>
+                    <input id="withdraw-field" class="border rounded border-gray-400 block m-auto w-2/4 px-4 mb-4"
+                        type="text" placeholder="$ amount">
+                    <button id="withdraw-button"
+                        class="text-xl text-white py-2 px-8 bg-teal-700 m-auto block mb-4 rounded">Deposit</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
